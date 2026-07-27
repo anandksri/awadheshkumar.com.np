@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-code text-zinc-400 gap-4 text-center sm:text-left">
-          <p>© {currentYear} Awadhesh Pandit. Designed & Developed with <Heart className="inline h-3.5 w-3.5 text-rose-500 fill-rose-500 mx-0.5" /></p>
+          <p>© {currentYear} Awadhesh Pandit. Designed & Developed by Awadhesh Pandit with <Heart className="inline h-3.5 w-3.5 text-rose-500 fill-rose-500 mx-0.5" /></p>
           <p className="text-zinc-500">Birgunj Institute of Technology • Nepal Node</p>
         </div>
       </div>
