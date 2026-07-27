@@ -4,6 +4,11 @@
  */
 
 import React, { useState } from 'react';
+<<<<<<< HEAD
+=======
+import { CustomCursor } from './components/CustomCursor';
+import { ParticleBackground } from './components/ParticleBackground';
+>>>>>>> 0a4486fbf325a4f61f077388f0fb13fe04d68d8f
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -20,7 +25,18 @@ export default function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   return (
+<<<<<<< HEAD
     <div className="relative min-h-screen bg-[#050505] text-white selection:bg-[#00BFFF]/30 selection:text-[#00E5FF] overflow-x-hidden bg-grid-pattern">
+=======
+    <div className="relative min-h-screen bg-[#050505] text-white selection:bg-[#00BFFF]/30 selection:text-[#00E5FF] overflow-x-hidden">
+      {/* Custom Precision Cursor */}
+      <CustomCursor />
+
+      {/* Interactive Particle Network */}
+      <ParticleBackground />
+
+      {/* Navigation Bar */}
+>>>>>>> 0a4486fbf325a4f61f077388f0fb13fe04d68d8f
       <Navbar onOpenResume={() => setIsResumeOpen(true)} />
 
       {/* Main Portfolio Sections */}
