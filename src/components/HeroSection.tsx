@@ -172,47 +172,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-5 space-y-6"
           >
-            {/* Developer Profile Image Card */}
-            <div className="relative mx-auto max-w-sm">
-              {/* Outer Glowing Cyber Halo Ring */}
-              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#00BFFF] via-[#00E5FF] to-[#7C3AED] opacity-70 blur-xl animate-pulse-glow" />
-              
-              <div className="relative glass-panel rounded-3xl p-3 border border-white/15 overflow-hidden group">
-                <div className="relative h-80 sm:h-96 w-full rounded-2xl overflow-hidden bg-[#0A0A0F] flex items-center justify-center">
-                  
-                  {/* High Quality Developer Portrait Image */}
-                  <img
-                    src={developerAvatar}
-                    alt="Awadhesh Pandit"
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  />
+            {/* Developer Profile Avatar */}
+            <div className="relative mx-auto w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] group">
+              <div className="absolute inset-0 rounded-full bg-[#050505] shadow-[0_0_80px_rgba(0,191,255,0.08)] animate-float" />
+              <div className="absolute inset-0 rounded-full border border-[#00BFFF]/10" />
+              <div className="absolute inset-4 rounded-full border border-[#00E5FF]/15" />
+              <div className="absolute inset-8 rounded-full border border-dashed border-[#7C3AED]/15" />
+              <div className="absolute inset-14 rounded-full border border-[#00E5FF]/10 animate-float" />
 
-                  {/* Gradient Overlay for labels */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
-
-                  {/* Floating Info & Badges */}
-                  <div className="absolute bottom-4 left-4 right-4 flex flex-col items-center text-center space-y-2">
-                    <div className="backdrop-blur-md bg-black/40 px-4 py-2 rounded-xl border border-white/10">
-                      <h3 className="font-heading font-bold text-lg text-white drop-shadow-md">Awadhesh Pandit</h3>
-                      <p className="text-xs font-code text-[#00E5FF] mt-0.5">BIT Birgunj Student & Creator</p>
-                    </div>
-
-                    {/* Tech Badges */}
-                    <div className="flex flex-wrap justify-center gap-1.5">
-                      <span className="px-2.5 py-1 rounded-md text-[10px] font-code bg-[#00BFFF]/20 border border-[#00BFFF]/40 text-[#00E5FF] backdrop-blur-md">
-                        React.js
-                      </span>
-                      <span className="px-2.5 py-1 rounded-md text-[10px] font-code bg-[#7C3AED]/20 border border-[#7C3AED]/40 text-[#A78BFA] backdrop-blur-md">
-                        CapCut
-                      </span>
-                      <span className="px-2.5 py-1 rounded-md text-[10px] font-code bg-[#00E5FF]/20 border border-[#00E5FF]/40 text-[#00E5FF] backdrop-blur-md">
-                        PHP & SQL
-                      </span>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative w-full h-full rounded-full overflow-hidden bg-[#050505] transition-transform duration-500 ease-out group-hover:scale-[1.02]">
+                <img
+                  src={developerAvatar}
+                  alt="Awadhesh Pandit"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-center rounded-full"
+                />
               </div>
+
+              <div className="absolute top-4 left-4 h-4 w-4 rounded-full border border-[#00BFFF]/40 bg-[#0A0A0F]/70" />
+              <div className="absolute bottom-4 right-4 h-4 w-4 rounded-full border border-[#7C3AED]/40 bg-[#0A0A0F]/70" />
+              <div className="absolute top-1/2 left-0 h-10 w-px bg-[#00BFFF]/20" />
+              <div className="absolute right-0 top-1/2 h-10 w-px bg-[#7C3AED]/20" />
             </div>
 
             {/* Interactive Code Widget */}

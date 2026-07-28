@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
   institution: 'Birgunj Institute of Technology',
   profession: 'Student, Frontend Developer & Video Editor',
   passion: 'Digital Creation & Modern Web Design',
-  phone: '9744362108',
+  phone: '+977-9744362108',
   email: 'nottawadhesh45@gmail.com',
   githubUrl: 'https://github.com',
   linkedinUrl: 'https://linkedin.com',
